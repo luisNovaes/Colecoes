@@ -12,137 +12,226 @@ import java.util.Scanner;
  *
  * @author luis.silva
  */
-public class PautaRandomica {
+public class PautaRandomica extends Principal {
 
-    public static void executarExpelho() {
+    boolean loop = false;
 
-        Scanner sc = new Scanner(System.in);
+    public int geradorrandomico() {
         Random gerador = new Random();
-
         for (int i = 0; i < 1; i++) {
         }
-        int resultado = gerador.nextInt(8);
-
-        switch (resultado) {
-
-            case 0:
-
-                System.out.println("QUAL É A NOTA NA LINHA 1?");
-                String opcao0 = (sc.nextLine());
-
-                if (opcao0.equals("G")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota G");
-                } else {
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 1:
-                System.out.println(" QUAL É A NOTA NO ESPACO 1");
-                String opcao1 = (sc.nextLine());
-
-                if (opcao1.equals("A")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota A");
-                } else {
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 2:
-                System.out.println("QUAL É A NOTA NA LINHA 2");
-                String opcao2 = (sc.nextLine());
-
-                if (opcao2.equals("B")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota B");
-                } else {
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 3:
-                System.out.println(" QUAL É A NOTA NO ESPACO 2");
-                String opcao3 = (sc.nextLine());
-
-                if (opcao3.equals("C")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota C");
-                } else {
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 4:
-                System.out.println("QUAL É A NOTA NA LINHA 3");
-                String opcao4 = (sc.nextLine());
-
-                if (opcao4.equals("D")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota D");
-                } else {
-                    System.out.println("QUAL É A NOTA NA LINHA 1");
-                    sc.nextLine();
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 5:
-                System.out.println("QUAL É A NOTA NO ESPACO 3");
-                String opcao5 = (sc.nextLine());
-
-                if (opcao5.equals("E")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota E");
-                } else {
-                    System.out.println("QUAL É A NOTA NA LINHA 1");
-                    sc.nextLine();
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 6:
-                System.out.println("QUAL É A NOTA NA LINHA 4");
-                String opcao6 = (sc.nextLine());
-
-                if (opcao6.equals("F")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota F");
-                } else {
-                    System.out.println("QUAL É A NOTA NA LINHA 1");
-                    sc.nextLine();
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 7:
-                System.out.println("QUAL É A NOTA NO ESPACO 4");
-                String opcao7 = (sc.nextLine());
-
-                if (opcao7.equals("G")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota G");
-                } else {
-                    System.out.println("QUAL É A NOTA NA LINHA 1");
-                    sc.nextLine();
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            case 8:
-                System.out.println("QUAL É A NOTA NA LINHA 5");
-                String opcao8 = (sc.nextLine());
-
-                if (opcao8.equals("A")) {
-                    System.out.println("Isso mesmo, a primeira linha corresponde a nota A");
-                } else {
-                    System.out.println("QUAL É A NOTA NA LINHA 1");
-                    sc.nextLine();
-                    System.out.println("CONTINUI TENTANDO!");
-                }
-                break;
-
-            default:
-
-                System.out.println("Este numero não é válido!");
-
-        }
+        int resultado = gerador.nextInt(9);
+        return resultado;
     }
 
-    public static void main(String[] args) {
-        executarExpelho();
+    public boolean primeiraLinha() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota na LINHA 1?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("G")) {
+                System.out.println("CORRETO É A NOTA G");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+
+        return true;
     }
+
+    public boolean primeiroEspaco() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota no ESPAÇO 1?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("A")) {
+                System.out.println("CORRETO É A NOTA A");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+
+        return true;
+    }
+
+    public boolean segundaLinha() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota na LINHA 2?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("B")) {
+                System.out.println("CORRETO É A NOTA B");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean segundoEspaco() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota no ESPAÇO 2?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("C")) {
+                System.out.println("CORRETO É A NOTA C");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean terceiraLinha() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota no LINHA 3?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("D")) {
+                System.out.println("CORRETO É A NOTA D");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean terceiroEspaco() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota no ESPAÇO 3?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("E")) {
+                System.out.println("CORRETO É A NOTA E");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean quartaLinha() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota na LINHA 4?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("F")) {
+                System.out.println("CORRETO É A NOTA F");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean quartoEspaco() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota no ESPAÇO 4?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("G")) {
+                System.out.println("CORRETO É A NOTA G");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
+    public boolean quintaLinha() {
+        Scanner sc = new Scanner(System.in);
+        Principal reset = new Principal();
+        int sair = 0;
+        do {
+            System.out.println("Qual é a nota LINHA 5?");
+            String opcao0 = (sc.nextLine());
+            if (opcao0.equals("A")) {
+                System.out.println("CORRETO É A NOTA A");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 0;
+                reset.main();
+            } else {
+                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("Pressione qualquer tecla para continuar!");
+                sc.nextLine();
+                sair = 1;
+            }
+        } while (sair != 0);
+        return false;
+    }
+
 }

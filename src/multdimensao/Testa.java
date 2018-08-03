@@ -17,14 +17,15 @@ import java.util.Scanner;
 /**
  *
  * @author luis.silva
+ *
  */
 public class Testa {
 
     public static void main(String[] args) {
-        dadosPessoas();
+        playPauta();
     }
 
-    public static void dadosPessoas() {
+    public static void playPauta() {
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
 
@@ -43,7 +44,7 @@ public class Testa {
 
                 for (int i = 0; i < 1; i++) {
                 }
-                int resultado = gerador.nextInt(8);
+                int resultado = gerador.nextInt(9);
                 int sair = 0;
                 do {
                     if (resultado == 0) {
@@ -203,6 +204,7 @@ public class Testa {
                             sair = 1;
                         }
                     }
+
                 } while (sair != 0);
 
                 System.out.println();
