@@ -32,13 +32,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota na LINHA 1?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("G")) {
-                System.out.println("CORRETO É A NOTA G");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA G *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -56,13 +57,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota no ESPAÇO 1?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("A")) {
-                System.out.println("CORRETO É A NOTA A");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA A *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -80,13 +82,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota na LINHA 2?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("B")) {
-                System.out.println("CORRETO É A NOTA B");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA B *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -103,14 +106,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota no ESPAÇO 2?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("C")) {
-                System.out.println("CORRETO É A NOTA C");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
 
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -127,13 +130,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota no LINHA 3?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("D")) {
-                System.out.println("CORRETO É A NOTA D");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA D *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -150,13 +154,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota no ESPAÇO 3?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("E")) {
-                System.out.println("CORRETO É A NOTA E");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA E *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -173,13 +178,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota na LINHA 4?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("F")) {
-                System.out.println("CORRETO É A NOTA F");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA F *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -196,13 +202,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota no ESPAÇO 4?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("G")) {
-                System.out.println("CORRETO É A NOTA G");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA G ******");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
@@ -219,13 +226,14 @@ public class PautaRandomica extends Principal {
             System.out.println("Qual é a nota LINHA 5?");
             String opcao0 = (sc.nextLine());
             if (opcao0.equals("A")) {
-                System.out.println("CORRETO É A NOTA A");
-                System.out.println("Pressione qualquer tecla para continuar!");
-                sc.nextLine();
+                System.out.println("***** CORRETO É A NOTA A *****");
+                System.out.println("___________________________________");
+                System.out.println();
+//                sc.nextLine();
                 sair = 0;
                 reset.main();
             } else {
-                System.out.println("CONTINUI TENTANDO!");
+                System.out.println("ERRADO ** CONTINUI TENTANDO!");
                 System.out.println("Pressione qualquer tecla para continuar!");
                 sc.nextLine();
                 sair = 1;
